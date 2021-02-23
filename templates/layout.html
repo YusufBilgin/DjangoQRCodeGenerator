@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online QR Kod Oluşturucu</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        a {
+            color: black;
+            text-decoration: none !important;
+        }
+
+        button {
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 2px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            transition: .2s all;
+            background-color: #ddd;
+        }
+
+        .navbar {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px;
+            background-color: #add8e6;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            overflow: hidden;
+            background-color: #add8e6;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            font-weight: 100;
+        }
+
+        .nav-link {
+            padding: 10px 12px;
+            text-decoration: none;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .nav-link:hover {
+            background-color: #c7e8f2;
+        }
+
+        .nav-link:focus {
+            border: 3px solid #aaa;
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #c7e8f2;
+            width: 30%;
+        }
+
+        @media (max-width: 575.98px) {
+            .card {
+                width: 80%;
+            }
+        }
+
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            .card {
+                width: 60%;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1199.98px) {
+            .card {
+                width: 40%;
+            }
+        }
+
+        .control-group {
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 19px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            position: absolute;
+            width: 100%;
+            padding: 1px;
+            text-align: right;
+            bottom: 0;
+        }
+
+        input {
+            padding: 10px 20px;
+        }
+
+        .select {
+            padding: 5px 7px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+{% include "includes/navbar.html" %}
+    
+{% block body %}
+
+
+{% endblock body %}
+
+<footer>
+    © Yusuf Bilgin 2020
+</footer>
+</body>
+</html>

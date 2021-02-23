@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<br><br><br><br>
+
+    <center>
+        <img src="/static/{{qrcode.id}}.png">
+        <br>
+        <button>
+            <a href="/static/{{qrcode.id}}.png" download>
+                QR Kodu Indir  
+            </a>
+        </button>
+    </center>
+{% endblock body %}
